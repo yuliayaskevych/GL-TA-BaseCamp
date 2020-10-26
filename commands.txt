@@ -1,0 +1,16 @@
+git clone git@github.com:yuliayaskevych/GL-TA-BaseCamp.git
+cd Gl-TA-BaseCamp
+touch index.html
+code .
+git add index.html
+git commit -m "Add index.html"
+git commit -m "Add style for h1"
+git checkout -b style
+git branch
+git commit -am "Move style properties"
+git log --oneline --decorate --graph --all
+git checkout main
+git commit -am "Remove punctuation"
+git merge style
+git commit -am "Fix merge conflicts"
+git log --oneline --decorate --graph --all
